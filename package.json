@@ -1,0 +1,20 @@
+{
+  "name": "primbase",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jarzon/PrimBase.git"
+  },
+  "author": "Jarzon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jarzon/PrimBase/issues"
+  },
+  "homepage": "https://github.com/Jarzon/PrimBase#readme",
+  "scripts": {
+    "update": "npm update"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "primgulp": "^0.8.5"
+  }
+}
