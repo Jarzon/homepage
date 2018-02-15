@@ -14,10 +14,6 @@ class Home extends Controller
      */
     public function index()
     {
-        //$model = $this->getModel('BaseModel');
-
-        $this->addVar('name', 'anonymous');
-
-        $this->render('home/index');
+        $this->render('index');
     }
 }
