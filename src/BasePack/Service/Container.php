@@ -6,7 +6,7 @@ use Jarzon\Container\Localization;
 
 class Container extends \Prim\Container
 {
-    use Localization, Toolbar;
+    use Localization;
 
     /**
      * Use this Class to add Services to the container; The joy of static Containers
@@ -22,7 +22,7 @@ class Container extends \Prim\Container
         //You can inject Services into the Controller like so:
         // return $this->init($obj, $this->getView(), $this, $this->getService());
 
-        return $this->init($obj, $this->getView(), $this, $this->options, $this->getLocalizationService(), $this->getToolbarService());
+        return $this->init($obj, $this->getView(), $this, $this->options, $this->getLocalizationService());
     }
 
     /**
