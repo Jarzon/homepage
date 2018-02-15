@@ -1,17 +1,8 @@
 <?php
 namespace Homepage\BasePack\Service;
 
-use PrimPack\Container\Toolbar;
-use Jarzon\Container\Localization;
-
 class Container extends \Prim\Container
 {
-    use Localization;
-
-    /**
-     * Use this Class to add Services to the container; The joy of static Containers
-     */
-
     /**
      * @return \Prim\Controller
      */
@@ -19,10 +10,7 @@ class Container extends \Prim\Container
     {
         $this->parameters["$obj.class"] = $obj;
 
-        //You can inject Services into the Controller like so:
-        // return $this->init($obj, $this->getView(), $this, $this->getService());
-
-        return $this->init($obj, $this->getView(), $this, $this->options, $this->getLocalizationService());
+        return $this->init($obj, $this->getView(), $this, $this->options);
     }
 
     /**
@@ -32,6 +20,6 @@ class Container extends \Prim\Container
     {
         $obj = 'errorController';
 
-        return $this->init($obj, $this->getView(), $this, $this->options, $this->getLocalizationService());
+        return $this->init($obj, $this->getView(), $this, $this->options);
     }
 }
