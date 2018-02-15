@@ -1,5 +1,5 @@
 <?php
-use PrimBase\BasePack\Service\Container;
+use Homepage\BasePack\Service\Container;
 
 $root = dirname(__DIR__) . DIRECTORY_SEPARATOR;
 

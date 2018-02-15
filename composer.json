@@ -1,8 +1,8 @@
 {
-  "name": "jarzon/primbase",
+  "name": "jarzon/homepage",
   "type": "project",
   "autoload": {
-    "psr-4": {"PrimBase\\": "src/"}
+    "psr-4": {"Homepage\\": "src/"}
   },
   "config": {
     "bin-dir": "bin",

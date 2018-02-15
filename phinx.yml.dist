@@ -8,7 +8,7 @@ environments:
     prod:
         adapter: mysql
         host: localhost
-        name: PrimBase
+        name: Homepage
         user: root
         pass: ''
         port: 3306
@@ -18,7 +18,7 @@ environments:
     dev:
         adapter: mysql
         host: localhost
-        name: PrimBase
+        name: Homepage
         user: root
         pass: ''
         port: 3306
@@ -28,7 +28,7 @@ environments:
     test:
         adapter: mysql
         host: localhost
-        name: PrimBase
+        name: Homepage
         user: root
         pass: ''
         port: 3306

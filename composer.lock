@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d14efeec9c0b638ebf6aac5ccea3bf89",
+    "content-hash": "770dcc438029c22cd22a58099dcba950",
     "packages": [
         {
             "name": "jarzon/localization",
@@ -81,16 +81,16 @@
         },
         {
             "name": "jarzon/primpack",
-            "version": "v0.5.1",
+            "version": "v0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jarzon/PrimPack.git",
-                "reference": "28807423a1b669e17c7101fa6c94ea7915bf803c"
+                "reference": "611992aba666226e8a05f2fd1b351cba748058a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jarzon/PrimPack/zipball/28807423a1b669e17c7101fa6c94ea7915bf803c",
-                "reference": "28807423a1b669e17c7101fa6c94ea7915bf803c",
+                "url": "https://api.github.com/repos/Jarzon/PrimPack/zipball/611992aba666226e8a05f2fd1b351cba748058a9",
+                "reference": "611992aba666226e8a05f2fd1b351cba748058a9",
                 "shasum": ""
             },
             "require": {
@@ -108,7 +108,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-02-10T18:43:22+00:00"
+            "time": "2018-02-14T21:36:18+00:00"
         },
         {
             "name": "nikic/fast-route",

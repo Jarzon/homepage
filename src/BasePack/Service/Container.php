@@ -1,5 +1,5 @@
 <?php
-namespace PrimBase\BasePack\Service;
+namespace Homepage\BasePack\Service;
 
 use PrimPack\Container\Toolbar;
 use Jarzon\Container\Localization;

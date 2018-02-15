@@ -1,15 +1,15 @@
 {
-  "name": "primbase",
+  "name": "homepage",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jarzon/PrimBase.git"
+    "url": "git+https://github.com/Jarzon/Homepage.git"
   },
   "author": "Jarzon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Jarzon/PrimBase/issues"
+    "url": "https://github.com/Jarzon/Homepage/issues"
   },
-  "homepage": "https://github.com/Jarzon/PrimBase#readme",
+  "homepage": "https://github.com/Jarzon/Homepage#readme",
   "scripts": {
     "update": "npm update"
   },

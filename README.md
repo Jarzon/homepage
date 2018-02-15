@@ -1,3 +1,2 @@
-# Prim Base Project
+# Home page
 
-Base project for Prim: https://github.com/Jarzon/Prim
