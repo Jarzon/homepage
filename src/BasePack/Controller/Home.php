@@ -2,7 +2,7 @@
 namespace Homepage\BasePack\Controller;
 
 use Prim\Controller;
-use Homepage\BasePack\Service\Capture;
+use Jarzon\Capture;
 
 class Home extends Controller
 {
@@ -12,7 +12,9 @@ class Home extends Controller
             ['Libellum', ['http://libellum.localhost/', 'https://libellum.ca/', 'https://github.com/Jarzon/Libellum/']]
         ];
 
-        $capture = new Capture();
+        $capture = new Capture([
+            'chrome_path' => (Capture::isWindows())? '"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"': '/usr/bin/google-chrome'
+        ]);
 
         foreach ($projects as list($name, $urls)) {
             $capture->screenshot($urls[0], "{$this->options['app']}cache/preview/$name.png", false);
