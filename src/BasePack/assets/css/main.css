@@ -3,8 +3,9 @@ body {
 }
 
 .item {
-    width: 210px;
-    margin: 0 auto;
+    width: 250px;
+    float: left;
+    margin: 20px;
 }
 
 .item ul {
@@ -14,4 +15,12 @@ body {
 
 .item li {
     list-style: none;
+}
+
+.item img {
+    width: 250px;
+}
+
+h1 {
+    clear: both;
 }
