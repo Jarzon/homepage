@@ -1,0 +1,17 @@
+body {
+    background: #eee;
+}
+
+.item {
+    width: 210px;
+    margin: 0 auto;
+}
+
+.item ul {
+    margin: 0;
+    padding: 0;
+}
+
+.item li {
+    list-style: none;
+}

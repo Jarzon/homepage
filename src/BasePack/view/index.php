@@ -1,8 +1,14 @@
 <?php $this->start('default') ?>
-    <?php foreach ([
-        ['Libellum', 'http://libellum.localhost', 'https://libellum.ca', 'https://github.com/Jarzon/Libellum']
-                   ] as list($name, $devUrl, $prodUrl, $repoUrl)): ?>
-    <?=$name?>: <a href="<?=$devUrl?>" target="_top"><?=$devUrl?></a> - <a href="<?=$prodUrl?>" target="_top"><?=$prodUrl?></a> - <a href="<?=$repoUrl?>" target="_top"><?=$repoUrl?></a><br>
+    <?php foreach ($projects as list($name, $urls)): ?>
+        <div class="item">
+            <ul>
+                <li><?=$name?></li>
+                <li><img src="/img/preview/<?=$name?>.png"></li>
+                <?php foreach ($urls as list($url)): ?>
+                    <li><a href="<?=$url?>" target="_top"><?=$url?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
     <?php endforeach; ?>
 
 <?php $this->end() ?>
