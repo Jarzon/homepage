@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "78d47ca56b13fc368ddfbc8af441c3f8",
+    "content-hash": "f2878a80174f8cf4bd9c290380b03ab3",
     "packages": [
         {
-            "name": "jarzon/capture",
-            "version": "v0.1.0",
+            "name": "jarzon/cache",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Jarzon/capture.git",
-                "reference": "927075b113b7011f7fca0a5b013e9584f996870e"
+                "url": "https://github.com/Jarzon/Cache.git",
+                "reference": "f711999bef250e17b7aa3efdf9ce3ef44306d035"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jarzon/capture/zipball/927075b113b7011f7fca0a5b013e9584f996870e",
-                "reference": "927075b113b7011f7fca0a5b013e9584f996870e",
+                "url": "https://api.github.com/repos/Jarzon/Cache/zipball/f711999bef250e17b7aa3efdf9ce3ef44306d035",
+                "reference": "f711999bef250e17b7aa3efdf9ce3ef44306d035",
                 "shasum": ""
             },
             "require": {
@@ -33,7 +33,36 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-02-18T21:32:16+00:00"
+            "time": "2018-02-18T07:47:38+00:00"
+        },
+        {
+            "name": "jarzon/capture",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jarzon/capture.git",
+                "reference": "3a704670530f05f746d096f314d9c666b25d3d72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jarzon/capture/zipball/3a704670530f05f746d096f314d9c666b25d3d72",
+                "reference": "3a704670530f05f746d096f314d9c666b25d3d72",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "6.2.*"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Jarzon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2018-02-18T21:40:40+00:00"
         },
         {
             "name": "jarzon/prim",
@@ -512,16 +541,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.7.4",
+            "version": "1.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "9f901e29c93dae4aa77c0bb161df4276f9c9a1be"
+                "reference": "dfd6be44111a7c41c2e884a336cc4f461b3b2401"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/9f901e29c93dae4aa77c0bb161df4276f9c9a1be",
-                "reference": "9f901e29c93dae4aa77c0bb161df4276f9c9a1be",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/dfd6be44111a7c41c2e884a336cc4f461b3b2401",
+                "reference": "dfd6be44111a7c41c2e884a336cc4f461b3b2401",
                 "shasum": ""
             },
             "require": {
@@ -571,7 +600,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2018-02-11T18:49:29+00:00"
+            "time": "2018-02-19T10:16:54+00:00"
         },
         {
             "name": "phpunit/dbunit",
