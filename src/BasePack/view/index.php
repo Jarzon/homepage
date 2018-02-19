@@ -15,6 +15,7 @@
     <h1>PHPUnit Coverage</h1>
     <?php foreach ($phpunit as $name): ?>
         <div class="item">
+            <h3><?=$name?></h3>
             <div class="preview">
                 <a href="http://localhost/phpunit/<?=$name?>" target="_top"><img src="/img/preview/<?=$name?>.png"></a>
             </div>
