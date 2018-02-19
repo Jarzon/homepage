@@ -21,6 +21,10 @@ body {
     width: 250px;
 }
 
-h1 {
+.past, .past img {
+    width: 150px;
+}
+
+h1, h2 {
     clear: both;
 }

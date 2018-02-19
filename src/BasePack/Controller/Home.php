@@ -15,7 +15,7 @@ class Home extends Controller
         // TODO: replace links text by a image a chain for the website link an github icon for the repo
 
         $cache = new Cache([
-            'options' => ['cache_folder' => $this->options['app'].'cache/']
+            'cache_folder' => "{$this->options['app']}cache/"
         ]);
 
         $projects = [
@@ -32,6 +32,23 @@ class Home extends Controller
             'Forms',
             'Localization',
             'Pagination',
+        ];
+
+        $pastProjects = [
+            ['Berlos', ['http://localhost/archived/Berlos/', 'https://github.com/Jarzon/Berlos/']],
+            ['JVA', ['http://localhost/archived/JVA/index.htm', 'https://github.com/Jarzon/JVA/']],
+            ['Assur-Info', ['http://localhost/archived/assur-info/web/app.php/', 'https://github.com/Jarzon/Assur-Info/']],
+            ['Assur-Price', ['http://localhost/archived/assur-price/web/', 'https://github.com/Jarzon/Assur-Price/']],
+            ['Dragon-Lord', ['http://localhost/archived/Dragon-Lord/web/', 'https://github.com/Jarzon/dragon-lord/']],
+            ['ebl', ['http://localhost/archived/ebl/web/', 'https://github.com/Jarzon/ebl/']],
+            ['stats', ['http://localhost/archived/stats/', 'https://github.com/Jarzon/stats/']],
+        ];
+
+        $motds = [
+            ['motd', ['http://motd.localhost/', 'https://github.com/Jarzon/motd/']],
+            ['PAP', ['http://ub.localhost/', 'https://github.com/Jarzon/Berlos/']],
+            ['Yoshi3', ['http://yoshi3.localhost/', 'https://github.com/Jarzon/JVA/']],
+            ['Omnis', ['http://oh.localhost/', 'https://github.com/Jarzon/Assur-Info/']],
         ];
 
         $capture = new Capture([
@@ -54,9 +71,27 @@ class Home extends Controller
             });
         }
 
+        foreach ($pastProjects as list($name, $urls)) {
+            $cache->registerCache($name, 3600, function($name) use($capture, $urls) {
+                $capture->screenshot($urls[0], "{$this->options['app']}cache/preview/$name.png", false);
+
+                return true;
+            });
+        }
+
+        foreach ($motds as list($name, $urls)) {
+            $cache->registerCache($name, 3600, function($name) use($capture, $urls) {
+                $capture->screenshot($urls[0], "{$this->options['app']}cache/preview/$name.png", false);
+
+                return true;
+            });
+        }
+
         $this->render('index', 'BasePack', [
             'projects' => $projects,
-            'phpunit' => $phpunit
+            'pastProjects' => $pastProjects,
+            'phpunit' => $phpunit,
+            'motds' => $motds
         ]);
     }
 }
