@@ -46,9 +46,9 @@ class Home extends Controller
 
         $motds = [
             ['motd', ['http://motd.localhost/', 'https://github.com/Jarzon/motd/']],
-            ['PAP', ['http://ub.localhost/', 'https://github.com/Jarzon/Berlos/']],
-            ['Yoshi3', ['http://yoshi3.localhost/', 'https://github.com/Jarzon/JVA/']],
-            ['Omnis', ['http://oh.localhost/', 'https://github.com/Jarzon/Assur-Info/']],
+            ['PAP', ['http://ub.localhost/', 'https://github.com/Jarzon/ub/']],
+            ['Yoshi3', ['http://yoshi3.localhost/', 'https://github.com/Jarzon/yoshi3/']],
+            ['Omnis', ['http://oh.localhost/', 'https://github.com/Jarzon/OmnisHaven/']],
         ];
 
         $capture = new Capture([

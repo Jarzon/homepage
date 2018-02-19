@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 	    <meta charset="utf-8">
-		<title>Title</title>
+		<title>Projects</title>
 		<meta name="description" content="">
 
         <link rel="icon" type="image/png" href="/img/icon.png">
