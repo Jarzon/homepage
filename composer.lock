@@ -37,16 +37,16 @@
         },
         {
             "name": "jarzon/capture",
-            "version": "v0.1.1",
+            "version": "v0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jarzon/capture.git",
-                "reference": "3a704670530f05f746d096f314d9c666b25d3d72"
+                "reference": "41e7b53803fa964aae0f1aef4d57f0715bee7ff2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jarzon/capture/zipball/3a704670530f05f746d096f314d9c666b25d3d72",
-                "reference": "3a704670530f05f746d096f314d9c666b25d3d72",
+                "url": "https://api.github.com/repos/Jarzon/capture/zipball/41e7b53803fa964aae0f1aef4d57f0715bee7ff2",
+                "reference": "41e7b53803fa964aae0f1aef4d57f0715bee7ff2",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-02-18T21:40:40+00:00"
+            "time": "2018-02-19T21:39:19+00:00"
         },
         {
             "name": "jarzon/prim",
