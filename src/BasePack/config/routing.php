@@ -2,4 +2,4 @@
 /**
  * @var $this \Prim\Router
  */
-$this->get('/', 'BasePack\Home', 'index');
+$this->get('/[{project:.+}]', 'BasePack\Home', 'index');

@@ -154,7 +154,7 @@ class Home extends Controller
 
         foreach ($projects as $name => $infos) {
             $cache->registerCache($name, 86400, function($name) use($capture, $infos) {
-                $capture->screenshot($infos['dev'], "{$this->options['app']}cache/preview/$name.png");
+                $capture->screenshot($infos['dev'], "{$this->options['root']}public/img/preview/$name.png");
 
                 return true;
             });

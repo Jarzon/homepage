@@ -13,8 +13,7 @@
   },
   "img": {
     "files": {
-      "": ["src/*/assets/img/*.*"],
-      "preview": ["app/cache/preview/*.png"]
+      "": ["src/*/assets/img/*.*"]
     },
     "destination": "public/img"
   },
