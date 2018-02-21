@@ -10,8 +10,6 @@ class Home extends Controller
 {
     public function index()
     {
-        // TODO: Link to your github profile
-
         // TODO: replace links text by a image a chain for the website link an github icon for the repo
 
         $cache = new Cache([
@@ -153,8 +151,8 @@ class Home extends Controller
         ]);
 
         foreach ($projects as $name => $infos) {
-            $cache->registerCache($name, 86400, function($name) use($capture, $infos) {
-                $capture->screenshot($infos['dev'], "{$this->options['root']}public/img/preview/$name.png");
+            $cache->registerBatchCache('projects', $name, 300, function($name) use($capture, $infos) {
+                $capture->screenshot($infos['dev'], "{$this->options['root']}public/img/preview/$name.png", false);
 
                 return true;
             });

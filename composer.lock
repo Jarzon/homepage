@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "jarzon/cache",
-            "version": "v0.2.1",
+            "version": "v0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jarzon/Cache.git",
-                "reference": "f711999bef250e17b7aa3efdf9ce3ef44306d035"
+                "reference": "1ab1040d36b5c6e0ebbc6052ca541390576cea66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jarzon/Cache/zipball/f711999bef250e17b7aa3efdf9ce3ef44306d035",
-                "reference": "f711999bef250e17b7aa3efdf9ce3ef44306d035",
+                "url": "https://api.github.com/repos/Jarzon/Cache/zipball/1ab1040d36b5c6e0ebbc6052ca541390576cea66",
+                "reference": "1ab1040d36b5c6e0ebbc6052ca541390576cea66",
                 "shasum": ""
             },
             "require": {
@@ -33,7 +33,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-02-18T07:47:38+00:00"
+            "time": "2018-02-21T04:52:12+00:00"
         },
         {
             "name": "jarzon/capture",
