@@ -151,8 +151,8 @@ class Home extends Controller
         ]);
 
         foreach ($projects as $name => $infos) {
-            $cache->registerBatchCache('projects', $name, 300, function($name) use($capture, $infos) {
-                $capture->screenshot($infos['dev'], "{$this->options['root']}public/img/preview/$name.png", false);
+            $cache->registerBatchCache('projects', $name, 3600, function($name) use($capture, $infos) {
+                $capture->screenshot($infos['dev'], "{$this->options['root']}public/img/preview/$name.png");
 
                 return true;
             });
