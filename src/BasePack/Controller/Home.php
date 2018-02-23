@@ -49,6 +49,12 @@ class Home extends Controller
                 'prod' => 'https://www.masterj.net/game/',
                 'github' => 'https://github.com/Jarzon/RPG/'
             ],
+            'Calendar' => [
+                'location' => 'calendar/',
+                'dev' => 'http://calendar.localhost/',
+                'prod' => 'https://calendrier.jasonvaillancourt.ca/',
+                'github' => 'https://github.com/Jarzon/Calendar/'
+            ],
 
             // Services
 
