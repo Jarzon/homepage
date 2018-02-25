@@ -103,7 +103,12 @@ class Home extends Controller
             ],
             'Assur-Info' => [
                 'location' => 'archived/assur-info/',
-                'dev' => 'http://localhost/archived/assur-info/web/app.php/',
+                'dev' => 'http://localhost/archived/assur-info/web/app_dev.php/',
+                'github' => 'https://github.com/Jarzon/Assur-Info/'
+            ],
+            'Assur-Price-Beta' => [
+                'location' => 'archived/assur-price_symfony/',
+                'dev' => 'http://localhost/archived/assur-price_symfony/web/app_dev.php/',
                 'github' => 'https://github.com/Jarzon/Assur-Info/'
             ],
             'Assur-Price' => [
