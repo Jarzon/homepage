@@ -91,16 +91,6 @@ class Home extends Controller
 
             // Past Projects
 
-            'Berlos' => [
-                'location' => 'archived/Berlos/',
-                'dev' => 'http://localhost/archived/Berlos/',
-                'github' => 'https://github.com/Jarzon/Berlos/'
-            ],
-            'JVA' => [
-                'location' => 'archived/JVA/',
-                'dev' => 'http://localhost/archived/JVA/index.htm',
-                'github' => 'https://github.com/Jarzon/JVA/'
-            ],
             'Assur-Info' => [
                 'location' => 'archived/assur-info/',
                 'dev' => 'http://localhost/archived/assur-info/web/app_dev.php/',
@@ -132,8 +122,6 @@ class Home extends Controller
                 'github' => 'https://github.com/Jarzon/stats/'
             ],
 
-            // Motds
-
             'motd' => [
                 'location' => 'motds/motd',
                 'dev' => 'http://motd.localhost/',
@@ -155,6 +143,17 @@ class Home extends Controller
                 'prod' => 'https://www.masterj.net/game/',
                 'github' => 'https://github.com/Jarzon/OmnisHaven/'
             ],
+
+            'Berlos' => [
+                'location' => 'archived/Berlos/',
+                'dev' => 'http://localhost/archived/Berlos/',
+                'github' => 'https://github.com/Jarzon/Berlos/'
+            ],
+            'JVA' => [
+                'location' => 'archived/JVA/',
+                'dev' => 'http://localhost/archived/JVA/index.htm',
+                'github' => 'https://github.com/Jarzon/JVA/'
+            ]
         ];
 
         $capture = new Capture([
