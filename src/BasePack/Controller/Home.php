@@ -39,7 +39,7 @@ class Home extends Controller
             ],
             'Tasks' => [
                 'location' => 'tasks/',
-                'dev' => 'http://tasks.localhost/',
+                'dev' => 'http://tasks.localhost/projects',
                 'prod' => 'https://tasks.ca/',
                 'github' => 'https://github.com/Jarzon/Tasks/'
             ],
