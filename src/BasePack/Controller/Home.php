@@ -22,9 +22,9 @@ class Home extends Controller
             'chrome_path' => (Capture::isWindows())? '"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"': '/usr/bin/google-chrome'
         ]);
 
-        foreach ($projects as $name => $infos) {
-            $cache->registerBatchCache('projects', $name, 3600, function($name) use($capture, $infos) {
-                $capture->screenshot($infos['dev'], "{$this->options['root']}public/img/preview/$name.png");
+        foreach ($projects as $name => $project) {
+            $cache->registerBatchCache('projects', $name, 3600, function($name) use($capture, $project) {
+                $capture->screenshot($project->dev, "{$this->options['root']}public/img/preview/$name.png");
 
                 return true;
             });

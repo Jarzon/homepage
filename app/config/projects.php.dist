@@ -1,0 +1,11 @@
+<?php
+$builder = new \Homepage\BasePack\Service\Builder('C:\Program Files\JetBrains\PhpStorm 2017.3.3\bin\phpstorm.bat');
+
+$builder
+    ->add('ProjectName')
+    ->location('C:\apache\htdocs\ProjectName')
+    ->dev('https://projectname.localhost/')
+    ->prod('https://projectname.com/')
+    ->github('Jarzon/ProjectName');
+
+return $builder->getProjects();

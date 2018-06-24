@@ -4,16 +4,18 @@ $this->start('default');
 ?>
 
 <h2>Projects</h2>
-<?php foreach ($projects as $name => $infos): ?>
+<?php foreach ($projects as $name => $project): ?>
     <div class="item">
         <div class="preview">
-            <a href="<?=$infos['dev']?>" target="_top"><img src="<?=$this->fileCache("/img/preview/$name.png")?>"></a>
+            <a href="<?=$project->dev?>" target="_top"><img src="<?=$this->fileCache("/img/preview/$name.png")?>"></a>
         </div>
         <div class="links">
-            <?php if(isset($infos['prod'])):?>
-                <a href="<?=$infos['prod']?>" target="_top">Website</a> -
+            <?php if(isset($project->prod)):?>
+                <a href="<?=$project->prod?>" target="_top">Website</a> -
             <?php endif ?>
-            <a href="<?=$infos['github']?>" target="_top">GitHub</a>
+            <?php if(isset($project->github)):?>
+                <a href="<?=$project->github?>" target="_top">GitHub</a>
+            <?php endif ?>
         </div>
     </div>
 <?php endforeach; ?>
