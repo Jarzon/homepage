@@ -17,10 +17,23 @@ $this->start('default');
                 <a href="<?=$project->github?>" target="_top">GitHub</a>
             <?php endif ?>
             <?php if(isset($project->location)):?>
-                <a href="/open/<?=$project->name?>" target="_top">Open</a>
+                <a href="/open/<?=$project->name?>" onclick="bgRequest(this); return false;">Open</a>
             <?php endif ?>
         </div>
     </div>
 <?php endforeach; ?>
+
+<script>
+    function reqListener () {
+        console.log(this.responseText);
+    }
+
+    function bgRequest(link) {
+        var oReq = new XMLHttpRequest();
+        oReq.addEventListener("load", reqListener);
+        oReq.open("GET", link.href);
+        oReq.send();
+    }
+</script>
 
 <?php $this->end() ?>
