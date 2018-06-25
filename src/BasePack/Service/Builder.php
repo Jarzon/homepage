@@ -3,9 +3,9 @@ namespace Homepage\BasePack\Service;
 
 class Builder
 {
-    protected $projects = [];
+    public $projects = [];
     protected $lastProject = [];
-    protected $editor = '';
+    public $editor = '';
 
     public function __construct(string $editor)
     {

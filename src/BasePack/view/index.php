@@ -11,10 +11,13 @@ $this->start('default');
         </div>
         <div class="links">
             <?php if(isset($project->prod)):?>
-                <a href="<?=$project->prod?>" target="_top">Website</a> -
+                <a href="<?=$project->prod?>" target="_top">Website</a>
             <?php endif ?>
             <?php if(isset($project->github)):?>
                 <a href="<?=$project->github?>" target="_top">GitHub</a>
+            <?php endif ?>
+            <?php if(isset($project->location)):?>
+                <a href="/open/<?=$project->name?>" target="_top">Open</a>
             <?php endif ?>
         </div>
     </div>
