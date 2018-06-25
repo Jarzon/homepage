@@ -29,7 +29,14 @@ class Home extends Controller
 
         foreach ($projects as $name => $project) {
             $cache->registerBatchCache('projects', $name, 3600, function($name) use($capture, $project) {
-                $capture->screenshot($project->dev, "{$this->options['root']}public/img/preview/$name.png");
+                $location = $project->dev;
+
+                // Since chrome headless doesn't have a profile self generated cert won't be accepted
+                if(strpos($location, 'localhost') !== false) {
+                    $location = str_replace('https', 'http', $location);
+                }
+
+                $capture->screenshot($location, "{$this->options['root']}public/img/preview/$name.png");
 
                 return true;
             });
@@ -38,38 +45,6 @@ class Home extends Controller
         $this->render('index', 'BasePack', [
             'projects' => $projects
         ]);
-    }
-
-    function execInBackground($cmd) {
-        if (substr(php_uname(), 0, 7) == "Windows"){
-            pclose(popen("start /B ". $cmd, "r"));
-        }
-        else {
-            exec($cmd . " > /dev/null &");
-        }
-    }
-
-    public function isWindows() : bool
-    {
-        return substr(php_uname(), 0, 7) === "Windows";
-    }
-
-    public function exec(string $cmd, bool $async = true) : array
-    {
-        $stdout = '';
-        if(!$this->isWindows() && $async) {
-            $stdout = " > /dev/null &";
-        }
-
-        $output = [];
-
-        if ($this->isWindows() && $async) {
-            pclose(popen("start /B ". $cmd, "r"));
-        } else {
-            exec($cmd . $stdout, $output);
-        }
-
-        return $output;
     }
 
     public function open($projectName)
@@ -84,10 +59,20 @@ class Home extends Controller
 
         $output = '';
 
-        $cmd = "\"$builder->editor\" \"{$projects[$projectName]->location}\"";
+        $quote = '"';
 
-        exec($cmd, $output);
+        if(Capture::isWindows()) {
+            $quote = '\\"';
+        }
 
-        var_dump($output);
+        $cmd = "$quote{$builder->editor}$quote {$projects[$projectName]->location}";
+
+        if(Capture::isWindows()) {
+            shell_exec("SCHTASKS /F /Create /TN _notepad /TR \"$cmd\" /SC DAILY /RU INTERACTIVE");
+            shell_exec('SCHTASKS /RUN /TN "_notepad"');
+            shell_exec('SCHTASKS /DELETE /TN "_notepad" /F');
+        } else {
+            exec($cmd, $output);
+        }
     }
 }
