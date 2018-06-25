@@ -1,3 +1,4 @@
+<?php /** @var \Prim\View $this  */?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -6,7 +7,7 @@
 		<meta name="description" content="">
 
         <link rel="icon" type="image/png" href="/img/icon.png">
-        <link href="/css/main.css" rel="stylesheet">
+        <link href="<?=$this->fileCache('/css/main.css') ?>" rel="stylesheet">
         <?= $this->section('css') ?>
 	</head>
 	<body>

@@ -28,3 +28,7 @@ body {
 h1, h2 {
     clear: both;
 }
+
+a, a:visited, a:link {
+    color: #00e;
+}
