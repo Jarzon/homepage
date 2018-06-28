@@ -31,4 +31,5 @@ h1, h2 {
 
 a, a:visited, a:link {
     color: #00e;
+    margin-left: 10px;
 }
