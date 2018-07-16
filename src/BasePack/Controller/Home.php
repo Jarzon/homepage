@@ -15,8 +15,6 @@ class Home extends Controller
 
     public function index()
     {
-        // TODO: replace links text by a image a chain for the website link an github icon for the repo
-
         $cache = new Cache([
             'cache_folder' => "{$this->options['app']}cache/"
         ]);
@@ -31,7 +29,7 @@ class Home extends Controller
             $cache->registerBatchCache('projects', $name, 3600, function($name) use($capture, $project) {
                 $location = $project->dev;
 
-                // Since chrome headless doesn't have a profile self generated cert won't be accepted
+                // Since chrome headless doesn't have a profile, self generated cert won't be accepted, so replace https by http
                 if(strpos($location, 'localhost') !== false) {
                     $location = str_replace('https', 'http', $location);
                 }
@@ -68,9 +66,9 @@ class Home extends Controller
         $cmd = "$quote{$builder->editor}$quote {$projects[$projectName]->location}";
 
         if(Capture::isWindows()) {
-            shell_exec("SCHTASKS /F /Create /TN _notepad /TR \"$cmd\" /SC DAILY /RU INTERACTIVE");
-            shell_exec('SCHTASKS /RUN /TN "_notepad"');
-            shell_exec('SCHTASKS /DELETE /TN "_notepad" /F');
+            shell_exec("SCHTASKS /F /Create /TN _tempcmd /TR \"$cmd\" /SC DAILY /RU INTERACTIVE");
+            shell_exec('SCHTASKS /RUN /TN "_tempcmd"');
+            shell_exec('SCHTASKS /DELETE /TN "_tempcmd" /F');
         } else {
             exec($cmd, $output);
         }

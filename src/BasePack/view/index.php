@@ -3,9 +3,9 @@
 $this->start('default');
 ?>
 
-<h2>Projects</h2>
 <?php foreach ($projects as $name => $project): ?>
     <div class="item">
+        <h3><?=$project->name?></h3>
         <div class="preview">
             <a href="<?=$project->dev?>" target="_top"><img src="<?=$this->fileCache("/img/preview/$name.png")?>"></a>
         </div>
@@ -15,6 +15,9 @@ $this->start('default');
             <?php endif ?>
             <?php if(isset($project->github)):?>
                 <a href="<?=$project->github?>" target="_top">GitHub</a>
+            <?php endif ?>
+            <?php if(isset($project->phpunit)):?>
+                <a href="<?=$project->phpunit?>" target="_top">PHPUnit</a>
             <?php endif ?>
             <?php if(isset($project->location)):?>
                 <a href="/open/<?=$project->name?>" onclick="bgRequest(this); return false;">Open</a>

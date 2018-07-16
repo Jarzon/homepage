@@ -7,7 +7,8 @@ class Project
         $dev = null,
         $prod = null,
         $github = null,
-        $location = null;
+        $location = null,
+        $phpunit = null;
 
     public function __construct(string $name)
     {
@@ -40,6 +41,13 @@ class Project
     public function github(string $location)
     {
         $this->github = "https://github.com/$location";
+
+        return $this;
+    }
+
+    public function phpunit(string $location)
+    {
+        $this->phpunit = "https://localhost/phpunit/$location";
 
         return $this;
     }
