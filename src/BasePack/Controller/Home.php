@@ -22,7 +22,7 @@ class Home extends Controller
         $projects = $this->getBuilder()->getProjects();
 
         $capture = new Capture([
-            'chrome_path' => (Capture::isWindows())? '"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"': '/usr/bin/google-chrome'
+            'chrome_path' => (Capture::isWindows())? "\"{$this->options['chrome_path']}\"": $this->options['chrome_path']
         ]);
 
         foreach ($projects as $name => $project) {

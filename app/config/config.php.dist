@@ -5,8 +5,18 @@ return [
     // Path to your favorite code editor
     'editor' => 'C:\Program Files\JetBrains\PhpStorm 2017.3.3\bin\phpstorm64.exe',
 
+    // Path to chrome
+    'chrome_path' => 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe', // linux: /usr/bin/google-chrome
+
     // The project should run in local only, so these configs are meaningless
     'db_enable' => false,
+    'db_type' => '',
+    'db_host' => '',
+    'db_name' => '',
+    'db_user' => '',
+    'db_password' => '',
+    'db_charset' => '',
+    'db_options' => [],
     'environment' => 'dev',
     'debug' => true,
     'error_mail' => 'errors@example.com',
