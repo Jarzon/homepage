@@ -1,5 +1,5 @@
 <?php
-$builder = new \Homepage\BasePack\Service\Builder('C:\Program Files\JetBrains\PhpStorm 2017.3.3\bin\phpstorm.bat');
+$builder = new \Homepage\BasePack\Service\Builder();
 
 $builder
     ->add('ProjectName')

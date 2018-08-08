@@ -5,11 +5,10 @@ class Builder
 {
     public $projects = [];
     protected $lastProject = [];
-    public $editor = '';
 
-    public function __construct(string $editor)
+    public function __construct()
     {
-        $this->editor = $editor;
+
     }
 
     public function add(string $name)

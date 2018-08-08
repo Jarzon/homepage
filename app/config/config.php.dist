@@ -2,20 +2,15 @@
 return [
     'project_name' => 'Homepage',
 
-    'db_enable' => true,
-    'db_type' => 'mysql',
-    'db_host' => '127.0.0.1',
-    'db_name' => 'homepage',
-    'db_user' => 'root',
-    'db_password' => '',
-    'db_charset' => 'utf8',
+    // Path to your favorite code editor
+    'editor' => 'C:\Program Files\JetBrains\PhpStorm 2017.3.3\bin\phpstorm64.exe',
 
+    // The project should run in local only, so these configs are meaningless
+    'db_enable' => false,
     'environment' => 'dev',
     'debug' => true,
-
     'error_mail' => 'errors@example.com',
     'error_mail_from' => 'Homepage <errors@example.com>',
-
     'url_protocol' => !empty($_SERVER['HTTPS'])? 'https://': 'http://',
     'url_domain' => $_SERVER['SERVER_NAME']
 ];

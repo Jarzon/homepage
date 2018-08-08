@@ -63,7 +63,7 @@ class Home extends Controller
             $quote = '\\"';
         }
 
-        $cmd = "$quote{$builder->editor}$quote {$projects[$projectName]->location}";
+        $cmd = "$quote{$this->options['editor']}$quote {$projects[$projectName]->location}";
 
         if(Capture::isWindows()) {
             shell_exec("SCHTASKS /F /Create /TN _tempcmd /TR \"$cmd\" /SC DAILY /RU INTERACTIVE");
