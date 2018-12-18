@@ -3,8 +3,8 @@ $builder = new \Homepage\BasePack\Service\Builder();
 
 $builder
     ->add('ProjectName')
-    ->location('C:\apache\htdocs\ProjectName')
-    ->dev('https://projectname.localhost/')
+    ->location('/var/www/ProjectName')
+    ->dev('http://projectname.localhost/')
     ->prod('https://projectname.com/')
     ->github('Jarzon/ProjectName');
 

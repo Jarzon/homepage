@@ -5,6 +5,7 @@
 /public/js/
 /public/css/
 /public/files/
+/app/cache/
 /app/config/config.php
 /app/config/projects.php
 /app/config/messages.json

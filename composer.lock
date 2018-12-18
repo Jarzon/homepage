@@ -66,16 +66,16 @@
         },
         {
             "name": "jarzon/prim",
-            "version": "v0.12.8",
+            "version": "v0.12.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jarzon/Prim.git",
-                "reference": "9f3c20a5976a9e571744bff292934d9947f06dcc"
+                "reference": "9a00c5636c838b80dc457461ce401fdb96ca7d62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jarzon/Prim/zipball/9f3c20a5976a9e571744bff292934d9947f06dcc",
-                "reference": "9f3c20a5976a9e571744bff292934d9947f06dcc",
+                "url": "https://api.github.com/repos/Jarzon/Prim/zipball/9a00c5636c838b80dc457461ce401fdb96ca7d62",
+                "reference": "9a00c5636c838b80dc457461ce401fdb96ca7d62",
                 "shasum": ""
             },
             "require": {
@@ -108,20 +108,20 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2018-08-03T18:02:54+00:00"
+            "time": "2018-10-24T06:39:13+00:00"
         },
         {
             "name": "jarzon/primpack",
-            "version": "v0.5.12",
+            "version": "v0.5.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jarzon/PrimPack.git",
-                "reference": "f89e1fff5f729764b989295c0a5e85c8460a81fe"
+                "reference": "722d549b2271fa7d23e430e6c5807fd6e5dd536b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jarzon/PrimPack/zipball/f89e1fff5f729764b989295c0a5e85c8460a81fe",
-                "reference": "f89e1fff5f729764b989295c0a5e85c8460a81fe",
+                "url": "https://api.github.com/repos/Jarzon/PrimPack/zipball/722d549b2271fa7d23e430e6c5807fd6e5dd536b",
+                "reference": "722d549b2271fa7d23e430e6c5807fd6e5dd536b",
                 "shasum": ""
             },
             "require": {
@@ -140,7 +140,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-08-07T00:13:48+00:00"
+            "time": "2018-10-29T02:26:00+00:00"
         },
         {
             "name": "nikic/fast-route",
@@ -1712,7 +1712,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.9.0",
+            "version": "v1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -1770,16 +1770,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.1.3",
+            "version": "v4.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "46bc69aa91fc4ab78a96ce67873a6b0c148fd48c"
+                "reference": "367e689b2fdc19965be435337b50bc8adf2746c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/46bc69aa91fc4ab78a96ce67873a6b0c148fd48c",
-                "reference": "46bc69aa91fc4ab78a96ce67873a6b0c148fd48c",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/367e689b2fdc19965be435337b50bc8adf2746c9",
+                "reference": "367e689b2fdc19965be435337b50bc8adf2746c9",
                 "shasum": ""
             },
             "require": {
@@ -1825,7 +1825,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-10-02T16:36:10+00:00"
         },
         {
             "name": "theseer/tokenizer",

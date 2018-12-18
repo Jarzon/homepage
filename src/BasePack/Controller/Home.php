@@ -16,14 +16,12 @@ class Home extends Controller
     public function index()
     {
         $cache = new Cache([
-            'cache_folder' => "{$this->options['app']}cache/"
+            'cache_folder' => "{$this->options['app']}cache"
         ]);
 
         $projects = $this->getBuilder()->getProjects();
 
-        $capture = new Capture([
-            'chrome_path' => (Capture::isWindows())? "\"{$this->options['chrome_path']}\"": $this->options['chrome_path']
-        ]);
+        $capture = new Capture($this->options);
 
         foreach ($projects as $name => $project) {
             $cache->registerBatchCache('projects', $name, 3600, function($name) use($capture, $project) {
