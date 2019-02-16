@@ -47,7 +47,7 @@ class Project
 
     public function phpunit(string $location)
     {
-        $this->phpunit = "https://localhost/phpunit/$location";
+        $this->phpunit = "http://phpunit.localhost/$location/";
 
         return $this;
     }
