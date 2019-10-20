@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a102d85e67596bad312b4b5a52443726",
+    "content-hash": "8e4d20de2f50b400f6bbc696f38c94ad",
     "packages": [
         {
             "name": "jarzon/cache",
@@ -758,6 +758,7 @@
                 "testing",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2018-01-23T13:32:26+00:00"
         },
         {
@@ -1150,6 +1151,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2017-08-03T14:08:16+00:00"
         },
         {
@@ -1925,7 +1927,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.0.0"
+        "php": ">=7.2.0"
     },
     "platform-dev": []
 }
