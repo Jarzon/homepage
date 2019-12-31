@@ -3,8 +3,6 @@ body {
 }
 
 .item {
-    width: 250px;
-    height: 300px;
     float: left;
     margin: 20px;
 }
@@ -18,12 +16,9 @@ body {
     list-style: none;
 }
 
-.item img {
-    width: 250px;
-}
-
-.past, .past img {
-    width: 150px;
+.item iframe {
+    height: 400px;
+    width: 400px;
 }
 
 h1, h2 {

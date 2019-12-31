@@ -1,13 +1,16 @@
 <?php
-/** @var $this Prim\View */
+/**
+ * @var $this Prim\View
+ * @var $projects object[]
+ */
 $this->start('default');
 ?>
 
 <?php foreach ($projects as $name => $project): ?>
     <div class="item">
-        <h3><?=$project->name?></h3>
+        <h3><a href="<?=$project->dev?>" target="_top"><?=$project->name?></a></h3>
         <div class="preview">
-            <a href="<?=$project->dev?>" target="_top"><img src="<?=$this->fileCache("/img/preview/$name.png")?>"></a>
+            <iframe src="<?=$project->dev?>"></iframe>
         </div>
         <div class="links">
             <?php if(isset($project->prod)):?>

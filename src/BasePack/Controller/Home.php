@@ -15,28 +15,7 @@ class Home extends Controller
 
     public function index()
     {
-        $cache = new Cache([
-            'cache_folder' => "{$this->options['app']}cache"
-        ]);
-
         $projects = $this->getBuilder()->getProjects();
-
-        $capture = new Capture($this->options);
-
-        foreach ($projects as $name => $project) {
-            $cache->registerBatchCache('projects', $name, 3600, function($name) use($capture, $project) {
-                $location = $project->dev;
-
-                // Since chrome headless doesn't have a profile, self generated cert won't be accepted, so replace https by http
-                if(strpos($location, 'localhost') !== false) {
-                    $location = str_replace('https', 'http', $location);
-                }
-
-                $capture->screenshot($location, "{$this->options['root']}public/img/preview/$name.png");
-
-                return true;
-            });
-        }
 
         $this->render('index', 'BasePack', [
             'projects' => $projects
