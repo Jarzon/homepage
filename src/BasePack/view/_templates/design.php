@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 	    <meta charset="utf-8">
-		<title>Projects</title>
+		<title>Homepage</title>
 		<meta name="description" content="">
 
         <link rel="icon" type="image/png" href="/img/icon.png">
@@ -12,17 +12,9 @@
 	</head>
 	<body>
 
-        <nav>
-            
-        </nav>
-
         <main>
             <?= $this->section('default') ?>
         </main>
-
-        <footer>
-
-        </footer>
 
         <script src="/js/main.js"></script>
         <?= $this->section('js') ?>

@@ -9,9 +9,12 @@ $this->start('default');
 <?php foreach ($projects as $name => $project): ?>
     <div class="item">
         <h3><a href="<?=$project->dev?>" target="_top"><?=$project->name?></a></h3>
-        <div class="preview">
-            <iframe src="<?=$project->dev?>"></iframe>
-        </div>
+        <?php if($project->dev !== null): ?>
+            <div class="preview">
+                <iframe scrolling="no" src="<?=$project->dev?>"></iframe><a href="<?=$project->dev?>"><div class="overlay"></div></a>
+            </div>
+        <?php endif; ?>
+
         <div class="links">
             <?php if(isset($project->prod)):?>
                 <a href="<?=$project->prod?>" target="_top">Website</a>
@@ -28,18 +31,5 @@ $this->start('default');
         </div>
     </div>
 <?php endforeach; ?>
-
-<script>
-    function reqListener () {
-        console.log(this.responseText);
-    }
-
-    function bgRequest(link) {
-        var oReq = new XMLHttpRequest();
-        oReq.addEventListener("load", reqListener);
-        oReq.open("GET", link.href);
-        oReq.send();
-    }
-</script>
 
 <?php $this->end() ?>

@@ -1,5 +1,5 @@
 body {
-    background: #eee;
+    background: #222;
 }
 
 .item {
@@ -16,7 +16,27 @@ body {
     list-style: none;
 }
 
+.item .links {
+    padding: 5px;
+    font-size: 18px;
+}
+
 .item iframe {
+    height: 400px;
+    width: 400px;
+    background: #eee;
+    border: 1px solid #00caee;
+    border-radius: 15px;
+}
+
+.preview {
+    position: relative;
+}
+
+.preview .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 400px;
     width: 400px;
 }
@@ -26,6 +46,6 @@ h1, h2 {
 }
 
 a, a:visited, a:link {
-    color: #00e;
-    margin-left: 10px;
+    color: #00caee;
+    margin-right: 10px;
 }
