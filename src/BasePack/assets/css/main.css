@@ -5,6 +5,7 @@ body {
 .item {
     float: left;
     margin: 20px;
+    width: 18%;
 }
 
 .item ul {
@@ -23,7 +24,7 @@ body {
 
 .item iframe {
     height: 400px;
-    width: 400px;
+    width: 100%;
     background: #eee;
     border: 1px solid #00caee;
     border-radius: 15px;
