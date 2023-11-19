@@ -7,6 +7,7 @@ $this->start('default');
 ?>
 
 <h1>
+    <a href="https://uptimerobot.com/dashboard#mainDashboard">UpTime</a> |
     <a href="https://www.paypal.com/signin">PayPal</a> |
     <a href="https://ca.ovh.com/auth/">OVH servers</a> |
     <a href="https://domains.google.com/registrar/">Google domains</a> |
@@ -16,10 +17,18 @@ $this->start('default');
 </h1>
 
 <h1>
-    <a href="https://tweetdeck.twitter.com/">Twitter</a> |
-    <a href="https://youtube.com/">YouTube</a> |
-    <a href="https://funimation.com/">Funimation</a>
+    <a href="https://chat.openai.com/">ChatGPT</a> |
+    <a href="https://platform.openai.com/playground">GPT</a>
 </h1>
+
+<h2>
+    <a href="https://youtube.com/">YouTube</a> |
+    <a href="https://funimation.com/">Funimation</a> |
+    <a href="https://www.amazon.ca/gp/video/storefront">Amazon Prime</a> |
+    <a href="https://www.disneyplus.com/">Disney+</a>
+    <a href="https://www.netflix.com/browse">Netflix</a> |
+    <a href="https://www.crunchyroll.com/">Crunchyroll</a>
+</h2>
 
 <?php foreach ($projects as $name => $project): ?>
     <div class="item">
